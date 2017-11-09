@@ -1,0 +1,45 @@
+{
+  "name": "photopea-desktop",
+  "version": "1.0.0",
+  "description": "webview",
+  "author": "Michal Landsman",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "npm install && electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "build": {
+    "appId": "photopea",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  },
+  "devDependencies": {
+    "electron": "~1.7.8",
+    "electron-builder": "^19.45.4"
+  }
+}
