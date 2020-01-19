@@ -1,5 +1,7 @@
 # Photopea Desktop app
 
+🎨 Unofficial Electron app using webview for comfortable using from dock on desktop.
+
 ![Mac OS](./doc/mac_os.png)
 
 ![Ubuntu](./doc/ubuntu.png)
