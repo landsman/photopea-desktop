@@ -1,5 +1,5 @@
 {
-  "name": "@landsman/photopea-desktop",
+  "name": "photopea-desktop",
   "description": "webview",
   "license": "MIT",
   "author": "Michal Landsman",
@@ -14,5 +14,6 @@
   "devDependencies": {
     "electron": "^1.7.16",
     "electron-packager": "^9.1.0"
-  }
+  },
+  "dependencies": {}
 }
