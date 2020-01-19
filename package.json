@@ -20,8 +20,11 @@
     "package-linux": "electron-packager . photopea-desktop --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/128x128.png --prune=true --out=release-builds"
   },
   "devDependencies": {
-    "electron": "^1.7.16",
+    "electron": "^7.1.9",
     "electron-builder": "^22.2.0",
     "electron-packager": "^9.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0"
   }
 }
