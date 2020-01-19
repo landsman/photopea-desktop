@@ -1,7 +1,9 @@
-const {app, BrowserWindow} = require('electron');
+const {app, session, BrowserWindow} = require('electron');
 const path = require('path');
 const url = require('url');
 require('dotenv').config();
+
+let userAgent = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -31,8 +33,10 @@ function createWindow () {
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 
-  // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  session.defaultSession.webRequest.onBeforeSendHeaders((details, callback) => {
+    details.requestHeaders['User-Agent'] = userAgent;
+    callback({ cancel: false, requestHeaders: details.requestHeaders });
+  });
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
