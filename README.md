@@ -2,6 +2,8 @@
 
 ![Mac OS](./doc/mac_os.png)
 
+![Ubuntu](./doc/ubuntu.png)
+
 ## Development
 
 1. `git clone git@github.com:landsman/photopea-desktop.git`
