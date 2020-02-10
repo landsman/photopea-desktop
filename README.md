@@ -13,6 +13,14 @@
 3. `npm install`
 4. `npm run start`
 
+### Building debian package
+
+1. `git clone git@github.com:landsman/photopea-desktop.git`
+2. `cd photopea-desktop`
+3. `npm install`
+4. `npm run package-linux`
+5. `npm run build-debian`
+
 ## Useful dev links
 - https://www.christianengvall.se/electron-packager-tutorial/
 - https://electron.atom.io/docs/tutorial/application-packaging/#generating-asar-archive
