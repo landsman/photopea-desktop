@@ -10,7 +10,7 @@
 
 1. `git clone git@github.com:landsman/photopea-desktop.git`
 2. `cd photopea-desktop`
-3. `npm run install`
+3. `npm install`
 4. `npm run start`
 
 ## Useful dev links
