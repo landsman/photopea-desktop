@@ -1,0 +1,16 @@
+{
+  "dest": "release-builds/",
+  "icon": "assets/icons/png/256.png",
+  "categories": [
+    "Graphics"
+  ],
+  "name": "photopea-desktop",
+  "productName": "Photopea Desktop",
+  "genericName": "Image Manipulation Program",
+  "description": "Free advanced image editor",
+  "productDescription": "Photopea Desktop is the unofficial desktop client of the free online tool Photopea.  Used for editing raster art and vector graphics with support for PSD, XCF and Sketch files.",
+  "section": "Graphics",
+  "lintianOverrides": [
+    "changelog-file-missing-in-native-package"
+  ]
+}
