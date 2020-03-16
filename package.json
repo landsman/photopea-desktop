@@ -17,12 +17,14 @@
     "dist": "electron-builder",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . photopea-desktop --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Photopea Desktop\"",
-    "package-linux": "electron-packager . photopea-desktop --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/128x128.png --prune=true --out=release-builds"
+    "package-linux": "electron-packager . photopea-desktop --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/128x128.png --prune=true --out=release-builds",
+    "build-debian": "electron-installer-debian --src=release-builds/photopea-desktop-linux-x64/ --arch=amd64 --config=debian.json"
   },
   "devDependencies": {
     "electron": "^7.1.9",
     "electron-builder": "^22.2.0",
-    "electron-packager": "^9.1.0"
+    "electron-packager": "^9.1.0",
+    "electron-installer-debian": "^0.6.0"
   },
   "dependencies": {
     "dotenv": "^8.2.0"
