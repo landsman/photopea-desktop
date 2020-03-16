@@ -23,7 +23,7 @@
   "devDependencies": {
     "electron": "^7.1.9",
     "electron-builder": "^22.2.0",
-    "electron-packager": "^9.1.0",
+    "electron-packager": "^14.2.1",
     "electron-installer-debian": "^0.6.0"
   },
   "dependencies": {
