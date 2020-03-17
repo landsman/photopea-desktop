@@ -21,7 +21,7 @@
     "build-debian": "electron-installer-debian --src=release-builds/photopea-desktop-linux-x64/ --arch=amd64 --config=debian.json"
   },
   "devDependencies": {
-    "electron": "^7.1.9",
+    "electron": "^8.1.1",
     "electron-builder": "^22.2.0",
     "electron-packager": "^9.1.0",
     "electron-installer-debian": "^0.6.0"
